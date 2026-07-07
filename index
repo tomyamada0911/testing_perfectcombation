@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Combustion - ストリートダンサーズプロテイン</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Google Fonts: Noto Sans JP (本文), Dancing Script (筆記体ロゴ用) */
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+        
+        body { font-family: 'Noto Sans JP', sans-serif; background-color: #fcfaf7; color: #4a3e3d; }
+        
+        /* ロゴ用の筆記体フォント設定 */
+        .font-logo { font-family: 'Dancing Script', cursive; }
+
+        /* カスタムアニメーション */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+        }
+        .animate-float { animation: float 3s ease-in-out infinite; }
+
+        @keyframes gentle-wiggle {
+            0%, 100% { transform: rotate(-3deg); }
+            50% { transform: rotate(3deg); }
+        }
+        .animate-gentle-wiggle { animation: gentle-wiggle 2.5s ease-in-out infinite; }
+
+        @keyframes fade-in-up {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up { animation: fade-in-up 0.8s ease-out forwards; }
+    </style>
+</head>
+<body class="min-h-screen selection:bg-amber-100 pb-24 bg-stone-100">
+
+    <header class="bg-white/90 backdrop-blur-md border-b border-stone-200/80 px-4 py-3 sticky top-0 z-50 flex items-center justify-center shadow-sm">
+        <div class="flex items-center gap-2">
+            <i class="fa-solid fa-fire-flame-curved text-amber-600 text-xl animate-pulse"></i>
+            <span class="font-logo font-bold text-2xl tracking-wide text-stone-800">Perfect Combustion</span>
+        </div>
+    </header>
+
+    <main class="max-w-md mx-auto bg-white min-h-screen shadow-2xl overflow-hidden">
+        
+        <section class="relative w-full h-80">
+            <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80" alt="カフェラテ" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent"></div>
+        </section>
+
+        <section class="px-6 py-8 -mt-12 relative z-10 space-y-10 bg-white rounded-t-[3rem] animate-fade-in-up">
+            
+            <div class="space-y-4 text-center">
+                <div class="inline-block bg-amber-100 text-amber-800 text-xs font-extrabold px-4 py-1.5 rounded-full tracking-widest shadow-sm animate-gentle-wiggle">
+                    ISOPP監修
+                </div>
+                <h2 class="text-3xl font-black text-stone-800 leading-tight animate-float">
+                    ストリートダンサーズ<br>プロテイン
+                </h2>
+            </div>
+            
+            <div class="text-stone-600 text-sm leading-relaxed space-y-6 bg-stone-50 p-6 rounded-3xl border border-stone-100 shadow-sm">
+                
+                <!-- 新しい導入文セクション -->
+                <div class="space-y-4">
+                    <h3 class="font-black text-center text-lg text-stone-800 border-b-2 border-amber-200 pb-2">
+                        【ストリートダンサーズプロテイン】
+                    </h3>
+                    <p class="font-bold text-center text-stone-700 leading-relaxed pt-2">
+                        この製品は筋トレ専用でも、<br>
+                        ムキムキの肉体を作る為のものではありません✨<br>
+                        <span class="text-amber-800 text-lg mt-2 inline-block">ご自身の身体を整えるための、新しい一杯です☕</span>
+                    </p>
+                    
+                    <div class="bg-white p-4 rounded-xl border border-stone-200 shadow-sm space-y-3 text-sm text-stone-700 text-left">
+                        <p class="flex items-start gap-2">
+                            <i class="fa-solid fa-mug-hot text-amber-500 mt-1 flex-shrink-0"></i>
+                            <span>味はこだわりぬいた<strong>カフェラテ風味！</strong></span>
+                        </p>
+                        <p class="flex items-start gap-2">
+                            <i class="fa-solid fa-temperature-half text-amber-500 mt-1 flex-shrink-0"></i>
+                            <span>ホットで作っても栄養価が分解される事が無い為、<br><strong>ホットでもOK！もちろんアイスでもOK！</strong></span>
+                        </p>
+                        <p class="flex items-start gap-2">
+                            <i class="fa-solid fa-wand-magic-sparkles text-amber-500 mt-1 flex-shrink-0"></i>
+                            <span>ハチミツ・ホイップ・シナモンなど。<br><strong>お好みでカスタムしてもOK！</strong></span>
+                        </p>
+                        <p class="flex items-start gap-2">
+                            <i class="fa-solid fa-heart-pulse text-amber-500 mt-1 flex-shrink-0"></i>
+                            <span>いつものコーヒー替わりに飲むだけで<br><strong>あなたの回復の手助けをしてくれます。</strong></span>
+                        </p>
+                        <p class="flex items-start gap-2">
+                            <i class="fa-solid fa-cookie text-amber-500 mt-1 flex-shrink-0"></i>
+                            <span>ソイがお腹に優しく腹持ちも良いため、<strong>おやつ代わりにもなります。</strong></span>
+                        </p>
+                    </div>
+
+                    <div class="bg-amber-100/50 p-4 rounded-xl border border-amber-200 text-center space-y-1">
+                        <p class="text-amber-900 font-bold text-base flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-bolt text-amber-500"></i> BCAAが最大で<span class="text-xl font-black text-orange-600">6000mg</span>配合！
+                        </p>
+                        <p class="text-stone-600 text-xs mt-1">付属のスプーン1杯だけでもBCAAを2000mg摂る事が出来ます。</p>
+                    </div>
+                </div>
+
+                <!-- 既存のISOPP監修などの説明文 -->
+                <div class="space-y-3 pt-4 border-t border-stone-200">
+                    <p class="flex items-start gap-2">
+                        <i class="fa-solid fa-circle-check text-amber-500 mt-1 flex-shrink-0"></i>
+                        <span><strong class="text-stone-800">【世界王者 ISOPP監修】</strong><br>ブレイクダンス世界大会優勝のISOPPが、全てのダンサー・アスリートのパフォーマンス向上と素早い回復のために1年半をかけて開発しました。</span>
+                    </p>
+                    <p class="flex items-start gap-2">
+                        <i class="fa-solid fa-circle-check text-amber-500 mt-1 flex-shrink-0"></i>
+                        <span><strong class="text-stone-800">【黄金比率BCAA 6000mg配合】</strong><br>バリン・ロイシン・イソロイシンを黄金比率で1食あたり6000mg配合。動きを邪魔しないようソイ（大豆）を使用し、エネルギー源のブドウ糖もプラス。筋肥大ではなく、キレ・スタミナ・回復をサポートします。</span>
+                    </p>
+                </div>
+
+                <div class="bg-white p-4 rounded-xl border border-amber-100 space-y-3">
+                     <p class="flex items-start gap-2">
+                        <i class="fa-solid fa-angles-up text-amber-500 mt-1 flex-shrink-0 animate-bounce"></i>
+                        <span><strong class="text-stone-800">【独自の2段階吸収システム】</strong><br>「BCAAが先に溶けて、後からソイがゆっくり溶ける」デュアルリリースを採用。連日の練習や長時間のイベントでも、集中力とスタミナを持続させ、最後まで走り切るための強い味方です。</span>
+                    </p>
+                </div>
+
+                <div class="space-y-3">
+                    <p class="flex items-start gap-2">
+                        <i class="fa-solid fa-mug-hot text-amber-500 mt-1 flex-shrink-0"></i>
+                        <span><strong class="text-stone-800">【驚くほどの美味しさ】</strong><br>BCAA特有の苦味を活かし、約1年半の改良を経て「某大手コーヒー店のカフェラテのよう」と言われるほどの美味しさを実現。ホットでもアイスでも、豆乳やハチミツでカスタムしても楽しめます。</span>
+                    </p>
+                     <p class="flex items-start gap-2">
+                        <i class="fa-solid fa-shield-halved text-amber-500 mt-1 flex-shrink-0"></i>
+                        <span><strong class="text-stone-800">【安心の国内製造】</strong><br>厳しい基準をクリアした国際規格認定工場で、確かな品質と衛生管理のもと製造されています。</span>
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- 栄養価のアイコンバッジ -->
+            <div class="flex gap-4">
+                <div class="flex-1 bg-white border-2 border-amber-100 p-4 rounded-2xl shadow-sm text-center animate-float" style="animation-delay: 0.2s;">
+                    <i class="fa-solid fa-leaf text-amber-500 text-3xl mb-3 block"></i>
+                    <p class="text-xs font-bold text-stone-700">お腹に優しいソイ</p>
+                    <p class="text-[10px] text-stone-500 mt-1.5 leading-tight">腹持ち抜群で<br>おやつ代わりにも</p>
+                </div>
+                <div class="flex-1 bg-white border-2 border-amber-100 p-4 rounded-2xl shadow-sm text-center animate-float" style="animation-delay: 0.5s;">
+                    <i class="fa-solid fa-bolt text-amber-500 text-3xl mb-3 block"></i>
+                    <p class="text-xs font-bold text-stone-700">BCAA最大6000mg</p>
+                    <p class="text-[10px] text-stone-500 mt-1.5 leading-tight">スプーン1杯でも<br>2000mg配合</p>
+                </div>
+            </div>
+
+            <!-- エナドリ比較 -->
+            <div class="space-y-6 pt-4">
+                <h3 class="text-center font-bold text-stone-800 text-lg flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-scale-balanced text-amber-500"></i>
+                    いつものエナドリと比較
+                </h3>
+                
+                <div class="grid grid-cols-2 gap-3 text-center">
+                    <div class="bg-stone-50 p-4 rounded-2xl border border-stone-200 opacity-80 flex flex-col h-full">
+                        <div class="w-12 h-12 bg-stone-200 text-stone-500 rounded-full flex items-center justify-center mx-auto mb-3 text-xl">
+                            <i class="fa-solid fa-battery-quarter"></i>
+                        </div>
+                        <p class="font-bold text-stone-700 text-xs mb-4">一般的な<br>エナジードリンク</p>
+                        <div class="text-[10px] text-stone-500 space-y-2 flex-grow flex flex-col justify-end">
+                            <p class="bg-white py-1.5 px-1 rounded shadow-sm">カフェインによる<br>一時的な覚醒</p>
+                            <div class="text-red-400 py-1"><i class="fa-solid fa-arrow-down-long text-lg"></i></div>
+                            <p class="bg-white py-1.5 px-1 rounded shadow-sm text-red-500 font-bold border border-red-100">カフェインクラッシュ<br>（急激な疲労・反動）</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-amber-50 p-4 rounded-2xl border-2 border-amber-400 shadow-lg transform scale-105 relative z-10 flex flex-col h-full animate-pulse-slow">
+                        <div class="absolute -top-3 -right-2 bg-red-500 text-white text-[10px] font-black px-3 py-1 rounded-full shadow-md animate-bounce">
+                            おすすめ!
+                        </div>
+                        <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 text-white rounded-full flex items-center justify-center mx-auto mb-3 text-xl shadow-inner">
+                            <i class="fa-solid fa-battery-full"></i>
+                        </div>
+                        <p class="font-bold text-amber-900 text-xs mb-4">ストリートダンサーズ<br>プロテイン</p>
+                        <div class="text-[10px] text-amber-800 space-y-2 flex-grow flex flex-col justify-end">
+                            <p class="bg-white py-1.5 px-1 rounded shadow-sm border border-amber-100">BCAA+ソイで<br>持続的にアミノ酸供給</p>
+                            <div class="text-amber-500 py-1"><i class="fa-solid fa-arrow-up-long text-lg"></i></div>
+                            <p class="bg-white py-1.5 px-1 rounded shadow-sm text-amber-700 font-bold border border-amber-200">身体を芯から整え<br>ゆるやかに回復をサポート</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- CTA (LINE登録) -->
+        <section class="bg-stone-800 text-center p-8 mt-4 rounded-t-[3rem] text-stone-100">
+            <h3 class="text-xl font-bold mb-3 animate-float">試飲はいかがでしたか？</h3>
+            <p class="text-xs text-stone-400 mb-6 leading-relaxed">
+                美味しいアレンジレシピの定期配信に加え、<br>
+                ISOPPさんのWS情報や来店イベント、<br>
+                応援店舗での限定情報もお届けしています。
+            </p>
+            <div class="bg-white p-6 rounded-3xl text-stone-800 max-w-xs mx-auto shadow-xl relative overflow-hidden">
+                 <i class="fa-brands fa-line text-green-100 text-8xl absolute -right-4 -bottom-4 animate-gentle-wiggle" style="opacity: 0.2;"></i>
+                <i class="fa-brands fa-line text-green-500 text-5xl mb-3 block relative z-10 animate-float" style="animation-delay: 0.3s;"></i>
+                <p class="font-bold text-sm mb-4 relative z-10">テーブルの専用QRコードから<br>ぜひお友達追加をお願いします！</p>
+                <div class="bg-amber-100 text-amber-800 text-xs font-bold py-2 px-4 rounded-xl inline-block animate-pulse relative z-10">
+                    🎁 今なら専用シェイカープレゼント中！
+                </div>
+            </div>
+            <p class="text-[10px] text-stone-500 mt-6">© 2026 Perfect Combustion</p>
+        </section>
+
+    </main>
+</body>
+</html>
